@@ -1,3 +1,6 @@
+index.d.ts
+dist
+
 # Logs
 logs
 *.log
