@@ -26,6 +26,17 @@ export default class Dribbble {
         };
     }
 
+    public static get attachments() {
+        return {
+            create: (shot: string, body: { file: File }) => {
+                return Request.fetch({ url: `/shots/${shot}/attachments`, method: 'POST', body });
+            },
+            delete: (shot: string, id: string) => {
+                return Request.fetch({ url: `/shots/${shot}/attachments/${id}`, method: 'DELETE' });
+            },
+        };
+    }
+
     public static get shots() {
         return {
             list: () => {
