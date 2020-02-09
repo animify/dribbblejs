@@ -1,3 +1,19 @@
+## [Version 0.0.2](https://github.com/animify/dribbblejs/releases/tag/v0.0.2) (2020-2-9)
+
+### New features
+
+- add custom request module: [`0f5816d`](https://github.com/animify/dribbblejs/commit/0f5816d)
+- create Dribbble module and projects api: [`2b4bb4e`](https://github.com/animify/dribbblejs/commit/2b4bb4e)
+- add Shots api: [`0587b37`](https://github.com/animify/dribbblejs/commit/0587b37)
+- add User api: [`07b680d`](https://github.com/animify/dribbblejs/commit/07b680d)
+- add Attachments api: [`d8be6b2`](https://github.com/animify/dribbblejs/commit/d8be6b2)
+
+### Bug fixes
+
+- make exportable: [`381a241`](https://github.com/animify/dribbblejs/commit/381a241)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.1...v0.0.2)
+
 ## [Version 0.0.1](https://github.com/animify/dribbblejs/releases/tag/v0.0.1) (2020-2-9)
 
 ### Bug fixes
