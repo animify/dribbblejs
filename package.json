@@ -1,0 +1,7 @@
+{
+  "name": "dribbblejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Stefan Mansson <stefan.aotik@gmail.com>",
+  "license": "MIT"
+}
