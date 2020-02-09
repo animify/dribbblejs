@@ -64,4 +64,12 @@ export default class Dribbble {
             },
         };
     }
+
+    public static get user() {
+        return {
+            get: () => {
+                return Request.fetch({ url: '/user', method: 'GET' });
+            },
+        };
+    }
 }
