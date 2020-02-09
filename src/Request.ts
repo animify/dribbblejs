@@ -7,7 +7,7 @@ interface FetchOptions {
 }
 
 export default class Request {
-    private static _accessToken: string | undefined;
+    private static _authToken: string | undefined;
 
     public static async fetch(opts: FetchOptions) {
         try {
@@ -15,7 +15,7 @@ export default class Request {
                 method: opts.method,
                 body: JSON.stringify(opts.body),
                 headers: {
-                    Authorization: `Bearer ${Request.accessToken}`,
+                    Authorization: `Bearer ${Request.authToken}`,
                 },
             });
 
@@ -27,16 +27,16 @@ export default class Request {
         }
     }
 
-    public static get accessToken() {
-        if (!Request._accessToken) {
-            throw new Error('Access token is not defined.');
+    public static get authToken() {
+        if (!Request._authToken) {
+            throw new Error('Auth token is not defined.');
         }
 
-        return Request._accessToken;
+        return Request._authToken;
     }
 
-    public static set accessToken(token: string) {
-        Request._accessToken = token;
+    public static set authToken(token: string) {
+        Request._authToken = token;
     }
 
     private static buildURL(url: string) {
