@@ -1,7 +1,52 @@
 {
   "name": "dribbblejs",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Stefan Mansson <stefan.aotik@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "dist/index.js",
+  "umd": "dist/index.umd.js",
+  "module": "dist/index.m.js",
+  "scripts": {
+    "release": "changelog && git push --follow-tags && yarn publish --access public --non-interactive",
+    "build": "sh ./build.sh",
+    "bundle": "rollup -c",
+    "prepublishOnly": "yarn build",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animify/dribbblejs.git"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.17",
+    "changelog.md": "^1.1.0",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
+    "rollup": "^1.11.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.4",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.21.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "files": [
+    "dist",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "yarn run lint"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

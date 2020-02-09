@@ -1,0 +1,36 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "rules": {
+    "quotemark": [true, "single"],
+    "array-type": [true, "array"],
+    "no-namespace": [true, "allow-declarations"],
+    "no-trailing-whitespace": false,
+    "no-bitwise": false,
+    "no-angle-bracket-type-assertion": true,
+    "curly": [true, "ignore-same-line"],
+    "variable-name": [
+      false,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ],
+    "eofline": true,
+    "interface-name": false,
+    "member-ordering": false,
+    "no-any": false,
+    "no-console": false,
+    "no-unused-expression": [true, "allow-fast-null-checks", "allow-new"],
+    "object-literal-shorthand": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "prefer-const": true,
+    "radix": false,
+    "triple-equals": [true, "allow-null-check"]
+  },
+  "linterOptions": {
+    "exclude": [
+        "index.d.ts"
+    ]
+}
+}
