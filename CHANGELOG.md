@@ -1,3 +1,11 @@
+## [Version 0.0.3](https://github.com/animify/dribbblejs/releases/tag/v0.0.3) (2020-2-10)
+
+### Bug fixes
+
+- Dribbble api no longer static: [`b7a1666`](https://github.com/animify/dribbblejs/commit/b7a1666)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.2...v0.0.3)
+
 ## [Version 0.0.2](https://github.com/animify/dribbblejs/releases/tag/v0.0.2) (2020-2-9)
 
 ### New features
