@@ -9,7 +9,7 @@ export default class Dribbble {
         Request.authToken = options.authToken;
     }
 
-    public static get projects() {
+    public get projects() {
         return {
             list: () => {
                 return Request.fetch({ url: '/user/projects', method: 'GET' });
@@ -26,7 +26,7 @@ export default class Dribbble {
         };
     }
 
-    public static get attachments() {
+    public get attachments() {
         return {
             create: (shot: string, body: { file: File }) => {
                 return Request.fetch({ url: `/shots/${shot}/attachments`, method: 'POST', body });
@@ -37,7 +37,7 @@ export default class Dribbble {
         };
     }
 
-    public static get shots() {
+    public get shots() {
         return {
             list: () => {
                 return Request.fetch({ url: '/user/shots', method: 'GET' });
@@ -76,7 +76,7 @@ export default class Dribbble {
         };
     }
 
-    public static get user() {
+    public get user() {
         return {
             get: () => {
                 return Request.fetch({ url: '/user', method: 'GET' });

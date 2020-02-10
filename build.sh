@@ -5,7 +5,6 @@ function BUNDLE {
     echo "Bundling..."
     rm -rf dist
     yarn bundle
-    mv dist/index.d.ts index.d.ts
     echo "Bundling done."
 }
 
