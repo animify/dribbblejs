@@ -11,13 +11,19 @@ export default class Request {
 
     public static async fetch(opts: FetchOptions) {
         try {
-            const response = await fetch(Request.buildURL(opts.url), {
+            const requestOptions: RequestInit = {
                 method: opts.method,
                 body: JSON.stringify(opts.body),
-                headers: {
+            };
+
+            if (Request.authToken) {
+                requestOptions.headers = {
+                    ...requestOptions.headers,
                     Authorization: `Bearer ${Request.authToken}`,
-                },
-            });
+                };
+            }
+
+            const response = await fetch(Request.buildURL(opts.url), requestOptions);
 
             Request.checkStatus(response);
 
@@ -27,19 +33,15 @@ export default class Request {
         }
     }
 
-    public static get authToken() {
-        if (!Request._authToken) {
-            throw new Error('Auth token is not defined.');
-        }
-
-        return Request._authToken;
+    public static get authToken(): string {
+        return Request._authToken || '';
     }
 
     public static set authToken(token: string) {
         Request._authToken = token;
     }
 
-    private static buildURL(url: string) {
+    public static buildURL(url: string) {
         return `https://api.dribbble.com/v2/${url}`.replace(/([^:]\/)\/+/g, '$1');
     }
 
