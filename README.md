@@ -4,15 +4,15 @@ A Typescript-first [Dribbble API](https://developer.dribbble.com/v2) library.
 
 ## Features
 
-🤖 Full Typescript support
+##### 🤖 Full Typescript support
 
-🌈 Familiar API setup
+##### 🌈 Familiar API setup
 
-⚡️  Feather light
+##### ⚡️  Feather light
 
-🚨 Proper error handling
+##### 🚨 Proper error handling
 
-🧘‍♀️ Framework agnostic
+##### 🧘‍♀️ Framework agnostic
 
 ## Getting Started
 ### Installation
