@@ -1,3 +1,11 @@
+## [Version 0.0.4](https://github.com/animify/dribbblejs/releases/tag/v0.0.4) (2020-2-20)
+
+### Bug fixes
+
+- start adding test suites: [`0364073`](https://github.com/animify/dribbblejs/commit/0364073)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.3...v0.0.4)
+
 ## [Version 0.0.3](https://github.com/animify/dribbblejs/releases/tag/v0.0.3) (2020-2-10)
 
 ### Bug fixes
