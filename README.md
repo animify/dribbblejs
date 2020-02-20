@@ -1,5 +1,19 @@
 # dribbblejs
 
+A Typescript-first [Dribbble API](https://developer.dribbble.com/v2) library.
+
+## Features
+
+🤖 Full Typescript support
+
+🌈 Familiar API setup
+
+⚡️  Feather light
+
+🚨 Proper error handling
+
+🧘‍♀️ Framework agnostic
+
 ## Getting Started
 ### Installation
 
