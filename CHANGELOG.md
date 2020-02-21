@@ -1,3 +1,11 @@
+## [Version 0.0.8](https://github.com/animify/dribbblejs/releases/tag/v0.0.8) (2020-2-21)
+
+### Bug fixes
+
+- set content type for requests: [`631db09`](https://github.com/animify/dribbblejs/commit/631db09)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.7...v0.0.8)
+
 ## [Version 0.0.7](https://github.com/animify/dribbblejs/releases/tag/v0.0.7) (2020-2-21)
 
 ### New features
