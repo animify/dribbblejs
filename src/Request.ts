@@ -47,7 +47,7 @@ export default class Request {
         const params = new URLSearchParams(body);
         const apiUrl = new URL(`https://api.dribbble.com/v2/${url}`.replace(/([^:]\/)\/+/g, '$1'));
 
-        params.forEach((value, key) => apiUrl.searchParams.set(value, key));
+        params.forEach((value, key) => apiUrl.searchParams.set(key, value));
 
         return apiUrl.href;
     }
