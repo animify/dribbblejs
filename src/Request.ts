@@ -13,7 +13,6 @@ export default class Request {
         try {
             const requestOptions: RequestInit = {
                 method: opts.method,
-                body: new URLSearchParams(opts.body),
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
@@ -45,9 +44,12 @@ export default class Request {
     }
 
     public static buildURL(url: string, body?: FetchOptions['body']) {
-        const apiUrl = `https://api.dribbble.com/v2/${url}`.replace(/([^:]\/)\/+/g, '$1');
+        const params = new URLSearchParams(body);
+        const apiUrl = new URL(`https://api.dribbble.com/v2/${url}`.replace(/([^:]\/)\/+/g, '$1'));
 
-        return apiUrl;
+        params.forEach((value, key) => apiUrl.searchParams.set(value, key));
+
+        return apiUrl.href;
     }
 
     private static checkStatus(response: Response) {
