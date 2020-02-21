@@ -14,6 +14,9 @@ export default class Request {
             const requestOptions: RequestInit = {
                 method: opts.method,
                 body: JSON.stringify(opts.body),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
             };
 
             if (Request.authToken) {
