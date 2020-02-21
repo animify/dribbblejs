@@ -1,3 +1,11 @@
+## [Version 0.0.7](https://github.com/animify/dribbblejs/releases/tag/v0.0.7) (2020-2-21)
+
+### New features
+
+- add Dribbble response types: [`3582bdf`](https://github.com/animify/dribbblejs/commit/3582bdf)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.6...v0.0.7)
+
 ## [Version 0.0.6](https://github.com/animify/dribbblejs/releases/tag/v0.0.6) (2020-2-21)
 
 ### Bug fixes
