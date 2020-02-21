@@ -1,3 +1,11 @@
+## [Version 0.0.9](https://github.com/animify/dribbblejs/releases/tag/v0.0.9) (2020-2-21)
+
+### Bug fixes
+
+- try setting urlsearchparams as body: [`0bb05df`](https://github.com/animify/dribbblejs/commit/0bb05df)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.8...v0.0.9)
+
 ## [Version 0.0.8](https://github.com/animify/dribbblejs/releases/tag/v0.0.8) (2020-2-21)
 
 ### Bug fixes
