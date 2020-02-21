@@ -1,3 +1,11 @@
+## [Version 0.0.10](https://github.com/animify/dribbblejs/releases/tag/v0.0.10) (2020-2-21)
+
+### Bug fixes
+
+- use params in the url: [`abc2b94`](https://github.com/animify/dribbblejs/commit/abc2b94)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.9...v0.0.10)
+
 ## [Version 0.0.9](https://github.com/animify/dribbblejs/releases/tag/v0.0.9) (2020-2-21)
 
 ### Bug fixes
