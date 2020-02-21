@@ -1,3 +1,11 @@
+## [Version 0.0.6](https://github.com/animify/dribbblejs/releases/tag/v0.0.6) (2020-2-21)
+
+### Bug fixes
+
+- run terser on build: [`eb6bed8`](https://github.com/animify/dribbblejs/commit/eb6bed8)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.5...v0.0.6)
+
 ## [Version 0.0.5](https://github.com/animify/dribbblejs/releases/tag/v0.0.5) (2020-2-21)
 
 ### Bug fixes
