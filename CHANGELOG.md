@@ -1,3 +1,11 @@
+## [Version 0.0.11](https://github.com/animify/dribbblejs/releases/tag/v0.0.11) (2020-2-21)
+
+### Bug fixes
+
+- reverse key and value: [`ed51c70`](https://github.com/animify/dribbblejs/commit/ed51c70)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.10...v0.0.11)
+
 ## [Version 0.0.10](https://github.com/animify/dribbblejs/releases/tag/v0.0.10) (2020-2-21)
 
 ### Bug fixes
