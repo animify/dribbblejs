@@ -1,4 +1,14 @@
 import Request from './Request';
+import {
+    ProjectCreateBody,
+    ProjectUpdateBody,
+    AttachmentsCreateBody,
+    ShotsCreateBody,
+    ShotsUpdateBody,
+    Project,
+    Shot,
+    User,
+} from './types';
 
 interface DribbbleOptions {
     authToken: string;
@@ -12,23 +22,23 @@ export default class Dribbble {
     public get projects() {
         return {
             list: () => {
-                return Request.fetch({ url: '/user/projects', method: 'GET' });
+                return Request.fetch<Project[]>({ url: '/user/projects', method: 'GET' });
             },
-            create: (body: { name: string; description?: string }) => {
-                return Request.fetch({ url: '/projects', method: 'POST', body });
+            create: (body: ProjectCreateBody) => {
+                return Request.fetch<Project>({ url: '/projects', method: 'POST', body });
             },
-            update: (id: string, body: { name?: string; description?: string }) => {
-                return Request.fetch({ url: `/projects/${id}`, method: 'PUT', body });
+            update: (id: string, body: ProjectUpdateBody) => {
+                return Request.fetch<Project>({ url: `/projects/${id}`, method: 'PUT', body });
             },
             delete: (id: string) => {
-                return Request.fetch({ url: `/projects/${id}`, method: 'DELETE' });
+                return Request.fetch<Project>({ url: `/projects/${id}`, method: 'DELETE' });
             },
         };
     }
 
     public get attachments() {
         return {
-            create: (shot: string, body: { file: File }) => {
+            create: (shot: string, body: AttachmentsCreateBody) => {
                 return Request.fetch({ url: `/shots/${shot}/attachments`, method: 'POST', body });
             },
             delete: (shot: string, id: string) => {
@@ -40,35 +50,16 @@ export default class Dribbble {
     public get shots() {
         return {
             list: () => {
-                return Request.fetch({ url: '/user/shots', method: 'GET' });
+                return Request.fetch<Shot[]>({ url: '/user/shots', method: 'GET' });
             },
             get: (id: string) => {
-                return Request.fetch({ url: `/shots/${id}`, method: 'GET' });
+                return Request.fetch<Shot>({ url: `/shots/${id}`, method: 'GET' });
             },
-            create: (body: {
-                image: File;
-                title: string;
-                description?: string;
-                low_profile?: boolean;
-                rebound_source_id?: number;
-                scheduled_for?: number;
-                tags?: string[];
-                team_id?: number;
-            }) => {
+            create: (body: ShotsCreateBody) => {
                 return Request.fetch({ url: `/shots`, method: 'POST', body });
             },
-            update: (
-                id: string,
-                body: {
-                    title?: string;
-                    description?: string;
-                    low_profile?: boolean;
-                    scheduled_for?: number;
-                    tags?: string[];
-                    team_id?: number;
-                },
-            ) => {
-                return Request.fetch({ url: `/shots/${id}`, method: 'PUT', body });
+            update: (id: string, body: ShotsUpdateBody) => {
+                return Request.fetch<Shot>({ url: `/shots/${id}`, method: 'PUT', body });
             },
             delete: (id: string) => {
                 return Request.fetch({ url: `/shots/${id}`, method: 'DELETE' });
@@ -79,7 +70,7 @@ export default class Dribbble {
     public get user() {
         return {
             get: () => {
-                return Request.fetch({ url: '/user', method: 'GET' });
+                return Request.fetch<User>({ url: '/user', method: 'GET' });
             },
         };
     }

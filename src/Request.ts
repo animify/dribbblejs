@@ -9,7 +9,7 @@ interface FetchOptions {
 export default class Request {
     private static _authToken: string | undefined;
 
-    public static async fetch(opts: FetchOptions) {
+    public static async fetch<T = {}>(opts: FetchOptions) {
         try {
             const requestOptions: RequestInit = {
                 method: opts.method,
@@ -27,7 +27,7 @@ export default class Request {
 
             Request.checkStatus(response);
 
-            return await Request.parseResponse(response);
+            return (await Request.parseResponse(response)) as T;
         } catch (error) {
             throw error;
         }
@@ -46,7 +46,7 @@ export default class Request {
     }
 
     private static checkStatus(response: Response) {
-        if (response.status === 200) return;
+        if ([200, 202, 204].includes(response.status)) return;
 
         let message = response.statusText;
 
