@@ -13,7 +13,7 @@ export default class Request {
         try {
             const requestOptions: RequestInit = {
                 method: opts.method,
-                body: JSON.stringify(opts.body),
+                body: new URLSearchParams(opts.body),
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
@@ -26,7 +26,7 @@ export default class Request {
                 };
             }
 
-            const response = await fetch(Request.buildURL(opts.url), requestOptions);
+            const response = await fetch(Request.buildURL(opts.url, opts.body), requestOptions);
 
             Request.checkStatus(response);
 
@@ -44,8 +44,10 @@ export default class Request {
         Request._authToken = token;
     }
 
-    public static buildURL(url: string) {
-        return `https://api.dribbble.com/v2/${url}`.replace(/([^:]\/)\/+/g, '$1');
+    public static buildURL(url: string, body?: FetchOptions['body']) {
+        const apiUrl = `https://api.dribbble.com/v2/${url}`.replace(/([^:]\/)\/+/g, '$1');
+
+        return apiUrl;
     }
 
     private static checkStatus(response: Response) {
