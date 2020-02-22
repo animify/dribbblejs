@@ -8,15 +8,15 @@
   "umd": "dist/index.umd.js",
   "module": "dist/index.m.js",
   "scripts": {
-    "release": "changelog && git push --follow-tags && yarn publish --access public --non-interactive",
+    "release": "changelog && git push --follow-tags && yarpm publish --access public --non-interactive",
     "build": "sh ./build.sh",
     "bundle": "rollup -c",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "yarpm run build",
     "lint": "tslint -p tsconfig.json",
     "test": "jest"
   },
   "dependencies": {
-    "whatwg-fetch": "^3.0.0"
+    "fetch-ponyfill": "^6.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -39,7 +39,8 @@
     "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-typescript2": "^0.21.0",
     "tslint": "^5.16.0",
-    "typescript": "^3.4.5"
+    "typescript": "^3.4.5",
+    "yarpm": "^0.2.1"
   },
   "publishConfig": {
     "access": "public",
@@ -61,7 +62,7 @@
     }
   },
   "lint-staged": {
-    "*.ts": "yarn run lint"
+    "*.ts": "yarpm run lint"
   },
   "jest": {
     "automock": false,
