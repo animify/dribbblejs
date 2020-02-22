@@ -1,6 +1,6 @@
 # dribbblejs
 
-A Typescript-first [Dribbble API](https://developer.dribbble.com/v2) library.
+A Typescript-first, promise based [Dribbble API](https://developer.dribbble.com/v2) library.
 
 ## Features
 
