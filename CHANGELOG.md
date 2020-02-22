@@ -1,3 +1,11 @@
+## [Version 0.0.17](https://github.com/animify/dribbblejs/releases/tag/v0.0.17) (2020-2-22)
+
+### Bug fixes
+
+- Delete .npmrc: [`f5b002f`](https://github.com/animify/dribbblejs/commit/f5b002f)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.16...v0.0.17)
+
 ## [Version 0.0.16](https://github.com/animify/dribbblejs/releases/tag/v0.0.16) (2020-2-22)
 
 ### Bug fixes
