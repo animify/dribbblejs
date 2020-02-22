@@ -1,5 +1,7 @@
 # dribbblejs
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/70117f75b09f8473edd4/maintainability)](https://codeclimate.com/github/animify/dribbblejs/maintainability)
+
 A Typescript-first, promise based [Dribbble API](https://developer.dribbble.com/v2) library.
 
 ## Features
