@@ -1,3 +1,11 @@
+## [Version 0.0.14](https://github.com/animify/dribbblejs/releases/tag/v0.0.14) (2020-2-22)
+
+### Bug fixes
+
+- Merge branch 'master' of ssh://github.com/animify/dribbblejs: [`a2571df`](https://github.com/animify/dribbblejs/commit/a2571df)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.13...v0.0.14)
+
 ## [Version 0.0.13](https://github.com/animify/dribbblejs/releases/tag/v0.0.13) (2020-2-22)
 
 ### Bug fixes
