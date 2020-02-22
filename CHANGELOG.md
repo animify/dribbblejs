@@ -1,3 +1,35 @@
+## [Version 0.0.18](https://github.com/animify/dribbblejs/releases/tag/v0.0.18) (2020-2-22)
+
+### Bug fixes
+
+- Update package.json: [`ec15ba4`](https://github.com/animify/dribbblejs/commit/ec15ba4)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.17...v0.0.18)
+
+## [Version 0.0.17](https://github.com/animify/dribbblejs/releases/tag/v0.0.17) (2020-2-22)
+
+### Bug fixes
+
+- Delete .npmrc: [`f5b002f`](https://github.com/animify/dribbblejs/commit/f5b002f)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.16...v0.0.17)
+
+## [Version 0.0.16](https://github.com/animify/dribbblejs/releases/tag/v0.0.16) (2020-2-22)
+
+### Bug fixes
+
+- Update package.json: [`34e81a7`](https://github.com/animify/dribbblejs/commit/34e81a7)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.15...v0.0.16)
+
+## [Version 0.0.15](https://github.com/animify/dribbblejs/releases/tag/v0.0.15) (2020-2-22)
+
+### Bug fixes
+
+- Update README.md: [`ba9eedd`](https://github.com/animify/dribbblejs/commit/ba9eedd)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.14...v0.0.15)
+
 ## [Version 0.0.14](https://github.com/animify/dribbblejs/releases/tag/v0.0.14) (2020-2-22)
 
 ### Bug fixes

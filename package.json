@@ -1,6 +1,6 @@
 {
   "name": "dribbblejs",
-  "version": "0.0.14",
+  "version": "0.0.18",
   "author": "Stefan Mansson <stefan.aotik@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
@@ -44,7 +44,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "dist",
