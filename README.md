@@ -17,11 +17,13 @@ A Typescript-first [Dribbble API](https://developer.dribbble.com/v2) library.
 ## Getting Started
 ### Installation
 
+##### with Yarn
 ```
-yarn add dribbblejs
+$ yarn add dribbblejs
 ```
+##### or with NPM
 ```
-npm install dribbblejs
+$ npm install dribbblejs
 ```
 
 ### Usage
@@ -35,66 +37,112 @@ const dribbble = new Dribbble({
 ```
 
 ## API
-
 ### User
 
-#### Get the authenticated user
+[Official User API Documentation](https://developer.dribbble.com/v2/user/)
+
+#### Get authenticated user
+
 ```ts
 dribbble.user.get()
 ```
 
+---
 ### Projects
 
-#### Fetching a list of projects
+[Official Projects API Documentation](https://developer.dribbble.com/v2/projects/)
+
+#### Get list of projects
+
 ```ts
 dribbble.projects.list()
 ```
+
 #### Create a project
 ```ts
-dribbble.projects.create()
+dribbble.projects.create({
+    name: 'Project name', // *Required*
+    description: 'Project description' // Optional
+})
 ```
-#### Update a project
+
+#### Update a project by `id`
+
 ```ts
-dribbble.projects.update()
+dribbble.projects.update('883377', {
+    name: 'New project name', // Optional
+    description: 'New project description' // Optional
+})
 ```
-#### Delete a project
+
+#### Delete a project by `id`
+
 ```ts
-dribbble.projects.delete()
+dribbble.projects.delete('883377')
 ```
+
+---
 
 ### Shots
 
-#### Fetching a list of shots
+[Official Shots API Documentation](https://developer.dribbble.com/v2/shots/)
+
+#### Get list of shots
 ```ts
 dribbble.shots.list()
 ```
-#### Get a shot
+#### Get a shot by `id`
 ```ts
-dribbble.shots.get()
+dribbble.shots.get('6432565')
 ```
+
 #### Create a shot
 ```ts
-dribbble.shots.create()
-```
-#### Update a shot
-```ts
-dribbble.shots.update()
-```
-#### Delete a shot
-```ts
-dribbble.shots.delete()
-```
-
-### Attachments
-
-#### Create an attachment for a shot
-```ts
-dribbble.attachments.create()
+dribbble.shots.create({
+    image: imageFile // *Required*
+    title: 'Shot title', // *Required*
+    description: 'Shot description', // Optional
+    low_profile: true, // Optional
+    rebound_source_id: 6432542, // Optional
+    scheduled_for: 1582391638790, // Optional
+    tags: ['ui', 'illustration'], // Optional
+    team_id: 3818924 // Optional
+})
 ```
 
-#### Delete an attachment for a shot
+#### Update a shot by `id`
 ```ts
-dribbble.attachments.create()
+dribbble.shots.update('6432565', {
+    title: 'New shot title', // Optional
+    description: 'New shot description', // Optional
+    low_profile: true, // Optional
+    rebound_source_id: 6432542, // Optional
+    scheduled_for: 1582391638790, // Optional
+    tags: ['ui', 'illustration'], // Optional
+    team_id: 3818924 // Optional
+})
+```
+
+#### Delete a shot by `id`
+```ts
+dribbble.shots.delete('6432565')
+```
+
+---
+
+### Attachments API
+
+#### Create attachment for a `shot`
+
+```ts
+dribbble.attachments.create('6432565', {
+    file: attachmentFile // *Required*
+})
+```
+
+#### Delete attachment `id` for a `shot`
+```ts
+dribbble.attachments.delete('1376676', '6432565')
 ```
 
 ---
