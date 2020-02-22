@@ -1,3 +1,11 @@
+## [Version 0.0.15](https://github.com/animify/dribbblejs/releases/tag/v0.0.15) (2020-2-22)
+
+### Bug fixes
+
+- Update README.md: [`ba9eedd`](https://github.com/animify/dribbblejs/commit/ba9eedd)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.14...v0.0.15)
+
 ## [Version 0.0.14](https://github.com/animify/dribbblejs/releases/tag/v0.0.14) (2020-2-22)
 
 ### Bug fixes
