@@ -1,3 +1,11 @@
+## [Version 0.0.18](https://github.com/animify/dribbblejs/releases/tag/v0.0.18) (2020-2-22)
+
+### Bug fixes
+
+- Update package.json: [`ec15ba4`](https://github.com/animify/dribbblejs/commit/ec15ba4)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.17...v0.0.18)
+
 ## [Version 0.0.17](https://github.com/animify/dribbblejs/releases/tag/v0.0.17) (2020-2-22)
 
 ### Bug fixes
