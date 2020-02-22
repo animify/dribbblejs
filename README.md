@@ -39,7 +39,7 @@ const dribbble = new Dribbble({
 ## API
 ### User
 
-[Official User API Documentation](https://developer.dribbble.com/v2/user/)
+> ##### [Official User API Documentation](https://developer.dribbble.com/v2/user/)
 
 #### Get authenticated user
 
@@ -50,7 +50,7 @@ dribbble.user.get()
 ---
 ### Projects
 
-[Official Projects API Documentation](https://developer.dribbble.com/v2/projects/)
+> ##### [Official Projects API Documentation](https://developer.dribbble.com/v2/projects/)
 
 #### Get list of projects
 
@@ -85,7 +85,7 @@ dribbble.projects.delete('883377')
 
 ### Shots
 
-[Official Shots API Documentation](https://developer.dribbble.com/v2/shots/)
+> ##### [Official Shots API Documentation](https://developer.dribbble.com/v2/shots/)
 
 #### Get list of shots
 ```ts
@@ -132,6 +132,8 @@ dribbble.shots.delete('6432565')
 
 ### Attachments API
 
+> ##### [Official Attachments API Documentation](https://developer.dribbble.com/v2/attachments/)
+
 #### Create attachment for a `shot`
 
 ```ts
@@ -145,6 +147,8 @@ dribbble.attachments.create('6432565', {
 dribbble.attachments.delete('1376676', '6432565')
 ```
 
+
 ---
 
-###### MIT Licensed
+### License
+Dribbblejs is [MIT licensed](./LICENSE).
