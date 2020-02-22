@@ -41,7 +41,7 @@ export default class Dribbble {
             create: (shot: string, body: AttachmentsCreateBody) => {
                 return Request.fetch({ url: `/shots/${shot}/attachments`, method: 'POST', body });
             },
-            delete: (shot: string, id: string) => {
+            delete: (id: string, shot: string) => {
                 return Request.fetch({ url: `/shots/${shot}/attachments/${id}`, method: 'DELETE' });
             },
         };
