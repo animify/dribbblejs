@@ -59,13 +59,20 @@ export default class Request {
 
         switch (response.status) {
             case 400:
-                message = 'Something went wrong 400';
+                message = 'Something went wrong';
         }
 
-        throw new Error(message);
+        throw new Error(`Dribbblejs - ${response.status}: ${message}`);
     }
 
-    private static parseResponse(response: Response) {
-        return response.json();
+    private static async parseResponse(response: Response) {
+        const responseClone = response.clone();
+
+        try {
+            const data = await response.json();
+            return data;
+        } catch (err) {
+            return await responseClone.text();
+        }
     }
 }
