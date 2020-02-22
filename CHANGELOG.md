@@ -1,3 +1,11 @@
+## [Version 0.0.12](https://github.com/animify/dribbblejs/releases/tag/v0.0.12) (2020-2-22)
+
+### Bug fixes
+
+- rework response parser: [`b256d17`](https://github.com/animify/dribbblejs/commit/b256d17)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.11...v0.0.12)
+
 ## [Version 0.0.11](https://github.com/animify/dribbblejs/releases/tag/v0.0.11) (2020-2-21)
 
 ### Bug fixes
