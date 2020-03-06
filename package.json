@@ -8,10 +8,10 @@
   "umd": "dist/index.umd.js",
   "module": "dist/index.m.js",
   "scripts": {
-    "release": "changelog && git push --follow-tags && yarpm publish --access public --non-interactive",
+    "release": "changelog && git push --follow-tags && yarn publish --access public --non-interactive",
     "build": "sh ./build.sh",
     "bundle": "rollup -c",
-    "prepublishOnly": "yarpm run build",
+    "prepublishOnly": "yarn run build",
     "lint": "tslint -p tsconfig.json",
     "test": "jest"
   },
@@ -39,8 +39,7 @@
     "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-typescript2": "^0.21.0",
     "tslint": "^5.16.0",
-    "typescript": "^3.4.5",
-    "yarpm": "^0.2.1"
+    "typescript": "^3.4.5"
   },
   "publishConfig": {
     "access": "public",
@@ -62,7 +61,7 @@
     }
   },
   "lint-staged": {
-    "*.ts": "yarpm run lint"
+    "*.ts": "yarn run lint"
   },
   "jest": {
     "automock": false,
