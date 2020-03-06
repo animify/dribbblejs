@@ -11,7 +11,7 @@
     "release": "changelog && git push --follow-tags && yarn publish --access public --non-interactive",
     "build": "sh ./build.sh",
     "bundle": "rollup -c",
-    "prepublishOnly": "yarn run build",
+    "prepublishOnly": "yarn build",
     "lint": "tslint -p tsconfig.json",
     "test": "jest"
   },
