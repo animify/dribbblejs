@@ -73,6 +73,7 @@ export default class Request {
             const data = await response.json();
             return data;
         } catch (err) {
+            console.warn('Dribbblejs: issue with parsing response as JSON, returning text');
             return await responseClone.text();
         }
     }
