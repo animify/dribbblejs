@@ -1,3 +1,11 @@
+## [Version 0.0.20](https://github.com/animify/dribbblejs/releases/tag/v0.0.20) (2020-3-7)
+
+### Bug fixes
+
+- add warn for parsing as text: [`e2c1dc5`](https://github.com/animify/dribbblejs/commit/e2c1dc5)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.19...v0.0.20)
+
 ## [Version 0.0.19](https://github.com/animify/dribbblejs/releases/tag/v0.0.19) (2020-3-7)
 
 ### New features
