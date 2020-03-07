@@ -16,7 +16,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "whatwg-fetch": "^3.0.0"
+    "fetch-ponyfill": "^6.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

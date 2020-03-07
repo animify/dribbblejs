@@ -1,4 +1,5 @@
-import 'whatwg-fetch';
+import fetchPonyfill from 'fetch-ponyfill';
+const { fetch } = fetchPonyfill();
 
 interface FetchOptions {
     method: 'GET' | 'POST' | 'PUT' | 'DELETE';
