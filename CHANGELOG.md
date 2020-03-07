@@ -1,3 +1,20 @@
+## [Version 0.0.19](https://github.com/animify/dribbblejs/releases/tag/v0.0.19) (2020-3-7)
+
+### New features
+
+- Replace whatwg-fetch with fetch-ponyfill: [`eddbb76`](https://github.com/animify/dribbblejs/commit/eddbb76)
+- Update jest types: [`e059a95`](https://github.com/animify/dribbblejs/commit/e059a95)
+
+### Bug fixes
+
+- Update typescript 3.4.5 -> 3.8.2: [`a973baa`](https://github.com/animify/dribbblejs/commit/a973baa)
+- Update husky 2.2.0 -> 4.2.3: [`d3d4ddb`](https://github.com/animify/dribbblejs/commit/d3d4ddb)
+- Update lint-staged 8.1.6 -> 10.0.7: [`c02e9e9`](https://github.com/animify/dribbblejs/commit/c02e9e9)
+- Update rollup 1.11.3 -> 1.31.1: [`a54e4e6`](https://github.com/animify/dribbblejs/commit/a54e4e6)
+- Update rollup dependencies: plugin-babel 4.3.2 -> 4.3.3 plugin-peer-deps-external 2.2.0 ->2.2.2 plugin-typescript2 0.21.0 -> 0.26.0: [`820a261`](https://github.com/animify/dribbblejs/commit/820a261)
+
+[...full changes](https://github.com/animify/dribbblejs/compare/v0.0.18...v0.0.19)
+
 ## [Version 0.0.18](https://github.com/animify/dribbblejs/releases/tag/v0.0.18) (2020-2-22)
 
 ### Bug fixes
